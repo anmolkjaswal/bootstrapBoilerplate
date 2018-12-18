@@ -106,19 +106,50 @@ textarea {
 
 [Table of Contents]
 
-1. Fonts
-2. Body and some general stuff
-3. Header
-4. Menu
-5. Home
-6. Featured Album
-7. Shows
-8. Artist
-9. Extra
-10. Footer
+1. General
+2. Header
+3. Banner
 
 
-******************************/
+
+/*********************************
+1. General
+*********************************/
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px; } }
+
+.container-fluid {
+  margin: 0px !important;
+  padding: 0px 8% !important; }
+
+@media (max-width: 1224px) {
+  .container-fluid {
+    padding: 0px 15px !important; } }
+
+@media (min-width: 1620px) {
+  .box_1620 {
+    max-width: 1650px;
+    margin: auto; } }
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.28);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+
+}
 
 /*********************************
 3. Header
@@ -175,39 +206,8 @@ textarea {
   font-size: 30px;
   color: #FFFFFF;
 }
-.log_reg
-{
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 52px;
-}
-.log_reg ul li
-{
-  position: relative;
-}
-.log_reg ul li:not(:last-child)::after
-{
-  display: inline-block;
-  content: '/';
-  font-size: 14px;
-  color: #FFFFFF;
-  margin-left: 6px;
-  margin-right: 6px;
-}
-.log_reg ul li a
-{
-  font-size: 14px;
-  color: #FFFFFF;
-}
-.log_reg ul li a:hover
-{
-  color: #de4f33;
-}
+
+
 .main_nav ul li:not(:last-child)
 {
   margin-right: 24px;
@@ -291,9 +291,109 @@ textarea {
 {
   width: 100%;
 }
+/*********************************
+3. Banner
+*********************************/
 
+.home_banner_area {
+  background-image: url(../img/internet2.png);
+  opacity:.95;
+  position: relative;
+  z-index: 1;
+  height: 900px;
+}
 
+@media (max-width: 1199px) {
+  .home_banner_area {
+    height: 600px; } }
+.home_banner_area .banner_inner {
+  position: relative;
+  width: 100%;
+  min-height: 900px; }
+.home_banner_area .banner_inner .banner_content {
+  color: #000000;
+  padding-top: 110px;
+  align-self: center;
+  vertical-align: middle; }
+.home_banner_area .banner_inner .banner_content h1 {
+  font-size: 48px;
+  max-width: 520px;
+  color: #ffffff;
+  margin: 0; }
+.home_banner_area .banner_inner .banner_content p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  padding: 30px 0px 40px;
+  max-width: 498px;
+  margin: 0; }
+.home_banner_area .banner_inner .banner_content .main_btn:hover {
+  background: #ffffff;
+  border: 1px solid #ffffff; }
+.home_banner_area .banner_inner .banner_content .white_bg_btn {
+  border: 1px solid rgba(221, 221, 221, 0.30196);
+  background: rgba(255, 255, 255, 0.21);
+  color: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px; }
+.home_banner_area .banner_inner .banner_content .white_bg_btn:hover {
+  background: #3face4;
+  border: 1px solid #3face4; }
 
+.banner-area {
+  background: url(../img/internet2.png) center;
+  background-size: cover; }
+.banner-area .primary-btn {
+  padding-left: 30px;
+  padding-right: 30px; }
+.banner-area .overlay-bg {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.banner-content {
+  text-align: center; }
+.banner-content h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1em;
+  margin-top: 20px; }
+.banner-content h1 span {
+  font-weight: 700; }
+@media (max-width: 414px) {
+  .banner-content h1 {
+    font-size: 40px; } }
+.banner-content h4 {
+  font-weight: 400;
+  letter-spacing: 3px; }
+
+.main_btn {
+  position: relative;
+  display: inline-block;
+  background: cadetblue;
+  padding: 0px 40px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 48px;
+  border: 1px solid cadetblue;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms linear 0s;
+  border-radius: 5px;
+  text-transform: capitalize; }
+.main_btn:hover {
+  background: transparent;
+  color: cadetblue;
+  border: 1px solid cadetblue; }
 
 
 
