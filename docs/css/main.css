@@ -568,6 +568,20 @@ History content
   padding: 0;
 }
 
+/*********************************
+Basic Page
+*********************************/
+
+.list-gap{
+  padding-top: 25px;
+}
+
+.list-b li{
+  padding-top: 8px;
+  list-style-type: square;
+  font-size: 20px;
+}
+
 
 
  /* ==========================================================================
